@@ -1,2 +1,2 @@
-# catsViewer
+# Web
 Created with CodeSandbox
