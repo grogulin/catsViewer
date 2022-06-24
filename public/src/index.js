@@ -1,6 +1,6 @@
-import "./styles.css";
+// import "./styles.css";
 
-const getCats = function (callback) {
+const getCats = function () {
   new Promise(function (resolve, reject) {
     fetch("https://cataas.com/cat?json=true")
       .then((res) => res.json())
@@ -9,18 +9,16 @@ const getCats = function (callback) {
         img.src = "https://cataas.com" + cat.url;
       });
   });
-  callback();
 };
 
-var cntCats = 1;
+var cntCats = 0;
+var timer = document.querySelector('.timer');
 
-var reloadCat = document.querySelector("button");
+
+var reloadCat = document.querySelector(".reload-btn");
 
 reloadCat.onclick = function () {
-  getCats(() => {
-    var timer = document.querySelector(".timer");
-    console.log(timer);
-    timer.innerHtml = "Котов просмотрено: " + this.cntCats;
-    cntCats += 1;
-  });
+  getCats();
+  cntCats += 1;
+  timer.innerHTML = `Просмотрено котов: ${cntCats}`;
 };

@@ -10,7 +10,7 @@ h1 {
   align-items: center;
 }
 
-.mobile-btn {
+.reload-btn {
   background-color: #af4c4c; /* Green */
   border: none;
   color: white;
@@ -26,6 +26,9 @@ h1 {
   position: fixed;
   bottom: 10px;
   left: 3%;
+}
+
+.btn {
 }
 
 img {
