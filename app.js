@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-const port = 8080;
+const port = 80;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -40,8 +40,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(8080, function () {
-  console.log('Example app listening on port ' + 8080 + '!');
+app.listen(port, function () {
+  console.log('Example app listening on port ' + port + '!');
 });
 
 
