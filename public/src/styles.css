@@ -36,3 +36,8 @@ img {
   max-height: 50%;
   margin: auto;
 }
+
+.timer {
+  text-align: center;
+  font-size: 3em;
+}

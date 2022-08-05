@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:ubuntu
 # set working direction
 WORKDIR /app
 # add `/app/node_modules/.bin` to $PATH
